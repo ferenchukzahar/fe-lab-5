@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="КПІ, ІО-45, Лабораторна 5, JavaScript, Відень">
+    <meta name="description" content="Лабораторна робота №5 з курсу Основи FE-технологій - Ференчук Захар">
+    <title>Ференчук Захар Олегович, ІО-45, Лаб. 5, Варіант 15</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Блок з Лабораторної роботи №1 -->
+    <section class="lab1-info">
+        <h2>Ференчук Захар Олегович</h2>
+        <p><strong>Дата і місце народження:</strong> 28.10.2007, м. Рівне</p>
+        <p><strong>Освіта:</strong> Ліцей «Елітар», НТУУ "КПІ ім. Ігоря Сікорського"</p>
+        
+        <h3>Мої хобі:</h3>
+        <ul>
+            <li>Спорт (баскетбол, тренування в залі)</li>
+            <li>Відеоігри</li>
+            <li>Активний відпочинок на природі</li>
+        </ul>
+
+        <h3>Улюблені фільми:</h3>
+        <ol>
+            <li>Острів проклятих (Shutter Island, 2010)</li>
+            <li>Старим тут не місце (No Country for Old Men, 2007)</li>
+            <li>Інтерстеллар (Interstellar, 2014)</li>
+        </ol>
+
+        <h3>Улюблене місто - Відень</h3>
+        <p>Відень — столиця та найбільше місто Австрії, розташоване на берегах річки Дунай. Місто славиться своєю імперською архітектурою, музичною спадщиною та затишними кав'ярнями.</p>
+        <a href="https://www.wien.gv.at/" target="_blank">
+            <img src="vienna.jpg" alt="Місто Відень" width="400">
+        </a>
+    </section>
+
+    <hr>
+
+    <!-- Блок з Лабораторної роботи №5 -->
+    <section class="lab5-info">
+        <h2>Лабораторна робота №5</h2>
+        
+        <!-- Завдання 1: Форма -->
+        <div class="form-container">
+            <h3>Форма для заповнення (Варіант 15)</h3>
+            <form id="userForm" onsubmit="return validateForm(event)">
+                <div class="field-group">
+                    <label>ПІБ:</label>
+                    <input type="text" id="fnm" placeholder="ТТТТТТ Т.Т.">
+                </div>
+                <div class="field-group">
+                    <label>Варіант:</label>
+                    <input type="text" id="variant" placeholder="ЧЧ">
+                </div>
+                <div class="field-group">
+                    <label>Група:</label>
+                    <input type="text" id="group" placeholder="ТТ-ЧЧ">
+                </div>
+                <div class="field-group">
+                    <label>ID-card:</label>
+                    <input type="text" id="idcard" placeholder="ТТ №ЧЧЧЧЧЧ">
+                </div>
+                <div class="field-group">
+                    <label>E-Mail:</label>
+                    <input type="text" id="email" placeholder="TTTTTT@TTTTT.com">
+                </div>
+                <button type="submit">Підтвердити</button>
+            </form>
+
+            <div id="outputData" class="output-box">
+                <h4>Введені дані:</h4>
+                <p id="resFnm"></p>
+                <p id="resVariant"></p>
+                <p id="resGroup"></p>
+                <p id="resIdcard"></p>
+                <p id="resEmail"></p>
+            </div>
+        </div>
+
+        <!-- Завдання 2: Таблиця -->
+        <div class="table-container">
+            <h3>Інтерактивна таблиця 6х6</h3>
+            <label for="colorPicker">Оберіть колір для кліку: </label>
+            <input type="color" id="colorPicker" value="#ff0000">
+            <table id="interactiveTable"></table>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
